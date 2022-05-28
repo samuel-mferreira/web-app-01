@@ -1,20 +1,27 @@
-<img [src]="logo" alt="Logotipo">
+<img class="mt-5 d-block mx-auto" [src]="logo" alt="Logotipo">
 
-<h1>Conectar-se ao {{projectName}}.</h1>
+<h1 class="mt-3 text-center">Conectar-se ao {{projectName}}.</h1>
 
-<form>
-    <label for="login">Usuário</label>
-    <br>
-    <input type="text" id="login">
-    <br>
-    <label for="password">Senha</label>
-    <br>
-    <input type="password" id="password">
-    <a href="">Esqueci minha senha</a>
-    <br>
-    <input type="checkbox" id="remember-me">
-    <label for="remember-me">Mantenha-me conectado</label>
-    <button type="submit">Entrar</button>
-</form>
+<mat-card>
+    <form>
+        <mat-card-content class="mt-2">
+            <mat-form-field class="w-100" appearance="outline">
+                <mat-label>Usuário</mat-label>
+                <input id="login" matInput type="text">
+            </mat-form-field>
 
-<p>Ainda não possui uma conta? <a href="">Cadastre-se</a></p>
+            <mat-form-field class="w-100" appearance="outline">
+                <mat-label>Senha</mat-label>
+                <div class="d-flex">
+                    <input id="password" matInput placeholder="********" type="password" required>
+                    <a class="text-nowrap" href="">Esqueci minha senha</a>
+                </div>
+            </mat-form-field>
+            <div class="mt-2 d-flex justify-content-between align-items-center">
+                <mat-checkbox color="primary">Mantenha-me conectado</mat-checkbox>
+                <button mat-raised-button color="primary" type="submit">Entrar</button>
+            </div>
+            <p class="mt-5 text-center">Ainda não possui uma conta? <a href="">Cadastre-se</a></p>
+        </mat-card-content>
+    </form>
+</mat-card>

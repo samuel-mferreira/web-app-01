@@ -31,9 +31,10 @@
                             "src/assets"
                         ],
                         "styles": [
-                            "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
+                            "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
                             "src/assets/styles/bootstrap/bootstrap.min.css",
-                            "src/assets/styles.scss"
+                            "src/assets/styles.scss",
+                            "src/assets/styles/angular-material/custom-material.scss"
                         ],
                         "scripts": []
                     },
@@ -101,7 +102,7 @@
                             "src/assets"
                         ],
                         "styles": [
-                            "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
+                            "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
                             "src/assets/styles.scss"
                         ],
                         "scripts": []

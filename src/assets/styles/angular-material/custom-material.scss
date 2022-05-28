@@ -1,0 +1,11 @@
+@import '~@angular/material/theming';
+@include mat-core();
+@import './custom-palettes.scss';
+
+$custom-primary: mat-palette($custom-blue-palette);
+$custom-accent: mat-palette($custom-light-blue-palette);
+$custom-warn: mat-palette($custom-yellow-red-pallete);
+
+$my-custom-theme: mat-light-theme($custom-primary, $custom-accent, $custom-warn);
+
+@include angular-material-theme($my-custom-theme);

@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
     projectName: string;
-    logo!: string;
+    logo: string;
     constructor() {
         this.projectName = 'Project Name'
+        this.logo = 'assets/imgs/logo.png'
     }
 
     ngOnInit(): void {
